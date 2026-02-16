@@ -15,7 +15,8 @@ The model is trained on a dataset containing 5 classes:
 * **Exploratory Data Analysis (EDA):** Interactive visualization using `Plotly` to analyze class distribution and data balance.
 * **Model Architecture:** * **Feature Extractor:** MobileNetV2 (Pre-trained on ImageNet).
     * **Custom Head:** Global Average Pooling + Dense Output layer.
-* **Training Strategy:** * **Phase 1:** Training the classification head while freezing the base model.
+* **Training Strategy:**
+    * **Phase 1:** Training the classification head while freezing the base model.
     * **Phase 2 (Fine-Tuning):** Unfreezing top layers of MobileNetV2 with a very low learning rate to adapt to the specific features of flower images.
 
 ## 📊 Key Results & Performance
